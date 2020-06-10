@@ -17,6 +17,8 @@
 		5495165324910A2900A22815 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495165224910A2900A22815 /* Activity.swift */; };
 		5495165824911F4800A22815 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495165724911F4800A22815 /* ActivityCell.swift */; };
 		5495165A2491261F00A22815 /* Logics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549516592491261F00A22815 /* Logics.swift */; };
+		54BD850524914A0900D5E4C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD850424914A0900D5E4C4 /* DetailViewController.swift */; };
+		54BD850724914A3B00D5E4C4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD850624914A3B00D5E4C4 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		5495165224910A2900A22815 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5495165724911F4800A22815 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		549516592491261F00A22815 /* Logics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logics.swift; path = ../../GamifyMyTime/GamifyMyTime/Logics.swift; sourceTree = "<group>"; };
+		54BD850424914A0900D5E4C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		54BD850624914A3B00D5E4C4 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				5495164B2491081F00A22815 /* Info.plist */,
 				549516432491081A00A22815 /* Renard.xcdatamodeld */,
 				5495165724911F4800A22815 /* ActivityCell.swift */,
+				54BD850424914A0900D5E4C4 /* DetailViewController.swift */,
+				54BD850624914A3B00D5E4C4 /* AddViewController.swift */,
 				549516592491261F00A22815 /* Logics.swift */,
 			);
 			path = Renard;
@@ -154,11 +160,13 @@
 			files = (
 				5495165A2491261F00A22815 /* Logics.swift in Sources */,
 				5495165324910A2900A22815 /* Activity.swift in Sources */,
+				54BD850724914A3B00D5E4C4 /* AddViewController.swift in Sources */,
 				5495163F2491081A00A22815 /* ViewController.swift in Sources */,
 				5495163B2491081A00A22815 /* AppDelegate.swift in Sources */,
 				5495165824911F4800A22815 /* ActivityCell.swift in Sources */,
 				5495163D2491081A00A22815 /* SceneDelegate.swift in Sources */,
 				549516452491081A00A22815 /* Renard.xcdatamodeld in Sources */,
+				54BD850524914A0900D5E4C4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

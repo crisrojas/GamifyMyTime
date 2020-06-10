@@ -49,3 +49,19 @@ extension ViewController: UITableViewDataSource {
       }
 
 }
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailView" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let selectedActivity = self.activities[indexPath.row]
+                let destinationViewController = segue.destination as! DetailViewController
+                destinationViewController.activity = selectedActivity
+            }
+        }
+    }
+}
+

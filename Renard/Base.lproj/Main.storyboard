@@ -70,7 +70,7 @@
                                             <outlet property="countLabel" destination="WAA-mL-66u" id="qdN-eo-KTf"/>
                                             <outlet property="goalLabel" destination="VEZ-eF-5vk" id="UE6-zT-uw2"/>
                                             <outlet property="nameLabel" destination="554-qU-9g7" id="fTe-2v-7yk"/>
-                                            <segue destination="Jld-QE-4TE" kind="show" id="ON7-pm-VMH"/>
+                                            <segue destination="Jld-QE-4TE" kind="show" identifier="showDetailView" id="ON7-pm-VMH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -112,28 +112,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8g8-HM-275" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.8840579710145" y="837.72321428571422"/>
+            <point key="canvasLocation" x="843" y="816"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="o10-up-1m9">
             <objects>
-                <viewController id="Jld-QE-4TE" sceneMemberID="viewController">
+                <viewController id="Jld-QE-4TE" customClass="DetailViewController" customModule="Renard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Taa-g6-tov">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="qqc-B5-eRn">
+                                <rect key="frame" x="10" y="98" width="394" height="161.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIC-Hq-pqI">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="478-HM-Wvb">
+                                        <rect key="frame" x="0.0" y="70.5" width="394" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfc-Ik-YTN">
+                                        <rect key="frame" x="0.0" y="141" width="394" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qqc-B5-eRn" firstAttribute="top" secondItem="6sM-6t-STX" secondAttribute="top" constant="10" id="Tvq-Oh-VD0"/>
+                            <constraint firstItem="6sM-6t-STX" firstAttribute="trailing" secondItem="qqc-B5-eRn" secondAttribute="trailing" constant="10" id="jgL-Vs-F5v"/>
+                            <constraint firstItem="qqc-B5-eRn" firstAttribute="leading" secondItem="6sM-6t-STX" secondAttribute="leading" constant="10" id="yTe-7f-GhW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6sM-6t-STX"/>
                     </view>
                     <navigationItem key="navigationItem" id="T71-DV-n1y"/>
+                    <connections>
+                        <outlet property="countLabel" destination="478-HM-Wvb" id="lAG-EH-Kap"/>
+                        <outlet property="goalLabel" destination="Cfc-Ik-YTN" id="mpR-44-mU3"/>
+                        <outlet property="nameLabel" destination="rIC-Hq-pqI" id="31K-Ro-lFb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYq-zL-Nes" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1589" y="158"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="Rhs-jP-bQA">
             <objects>
-                <viewController id="M7q-KO-18k" sceneMemberID="viewController">
+                <viewController id="M7q-KO-18k" customClass="AddViewController" customModule="Renard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KMc-2o-7Lr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
