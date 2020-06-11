@@ -62,6 +62,12 @@ extension ViewController: UITableViewDelegate {
                 destinationViewController.activity = selectedActivity
             }
         }
+        /*if segue.identifier == "addActivity" {
+            if let activities = self.activities {
+                let destinationViewController = segue.destination as! AddViewController
+                destinationViewController.activities = activities
+            }
+        }*/
     }
 }
 
